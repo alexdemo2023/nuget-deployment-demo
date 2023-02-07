@@ -7,8 +7,10 @@ trigger:
 - master
 - feature/*
 
+#pool:
+#  vmImage: 'windows-latest'
 pool:
-  vmImage: 'windows-latest'
+  name: default
 
 variables:
   buildConfiguration: 'Release'
